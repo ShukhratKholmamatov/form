@@ -1,0 +1,337 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3{
+  color: hsl(213, 96%, 18%);
+}
+
+.land_page{
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(215, 100%, 97%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 60%;
+  height: 85vh;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ROUTE  */
+
+.container .route{
+  width: 28%;
+  background-image: url(/src/contents/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+}
+
+.container .route .round{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.container .route .round:hover{
+  background-color: rgb(198, 221, 255);
+  color: #000;
+}
+
+.container .route .steps{
+  margin-bottom: 25px;
+  font-size: 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.container .route .steps .step_name{
+  display: flex;
+  flex-direction: column;
+}
+
+.container .route .steps .step_name p{
+  color: rgb(172, 172, 172);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.container .route .steps .step_name h3{
+  font-size: 11px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* CONTENT of container */
+
+.container .content{
+  padding: 35px 80px;
+  width: 72%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .content .pay_box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.container .content .pay_box .box{
+  padding: 13px;
+  border: 1px solid rgb(172, 172, 172);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 30%;
+  height: 150px;
+  cursor: pointer;
+}
+
+.container .content .pay_box .box img{
+  width: 38px;
+  height: 38px;
+}
+
+.container .content .pay_box .box div h3{
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.container .content .pay_box .box div p{
+  font-size: 13px;
+  color: rgb(172, 172, 172);
+}
+
+.container .content .m_or_y{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 90px;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: hsla(215, 100%, 97%, 1);
+  border-radius: 10px;
+}
+
+.container .content .m_or_y h3{
+  color: rgb(172, 172, 172);
+  font-size: 15px;
+}
+
+.container .content .m_or_y .toggle{
+  width: 35px;
+  height: 20px;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.container .content .m_or_y .toggle div{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.container .content .btns{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.container .content .btns button{
+  width: 27%;
+  height: 40px;
+  color: #fff;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container .content .btns .back{
+  color: rgb(172, 172, 172);
+  background-color: #f7f7f7;
+}
+
+/* Personal Info */
+
+.container .content .inputs {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .content .inputs label{
+  color: hsl(213, 96%, 18%);
+  font-family: 'Ubuntu' sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.container .content .inputs input{
+  padding: 10px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.container .content p{
+  color: rgb(172, 172, 172);
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+/* Pick add-ons   */
+
+.container .content .check_boxes{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .content .check_boxes .check_box{
+  width: 100%;
+  height: 60px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+}
+
+.container .content .check_boxes .check_box:hover{
+  background-color:hsla(215, 100%, 97%, 1);
+}
+
+.container .content .check_boxes .check_box div{
+  display: flex;
+  width: auto;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .content .check_boxes .check_box p{
+  color: hsl(213, 96%, 18%);
+  margin-top: 40px;
+}
+
+.container .content .check_boxes .check_box .description h3{
+  font-size: 14px;
+  font-weight: bolder ;
+}
+
+.container .content .check_boxes .check_box .description p{
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+/* Summary */
+.container .content .cheqeue{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto; 
+  align-items: center;
+  background-color: hsla(215, 100%, 97%, 1);
+  border-radius: 10px;
+}
+
+.container .content .cheqeue .arcadeT{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.container .content .cheqeue .arcadeT div{
+  width: 200px;
+  display: flex;
+  height: 55px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .content .cheqeue .arcadeT div h3{
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.container .content .cheqeue .arcadeT div p{
+  font-size: 12px;
+}
+
+.container .content .cheqeue .arcadeT h5{
+  color: hsl(213, 96%, 18%);
+}
+
+.container .content .cheqeue .online_service{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+}
+
+.container .content .cheqeue .online_service h6{
+  color: rgb(172, 172, 172);
+  font-weight: 400;
+}
+
+.container .content .cheqeue .online_service h5{
+  color: hsl(213, 96%, 18%);
+}
+
+.container .content .total{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.container .content .total h6{
+  color: rgb(172, 172, 172);
+  font-weight: 400;
+}
+
+.container .content .total h5{
+  color: hsl(213, 100%, 31%);
+  font-weight: bolder;
+}
+
